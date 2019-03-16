@@ -3,6 +3,7 @@
  * attendance record if one is not found
  * within localStorage.
  */
+
 (function() {
     if (!localStorage.attendance) {
         console.log('Creating attendance records...');
@@ -29,6 +30,7 @@
 
 /* STUDENT APPLICATION */
 $(function() {
+
     var attendance = JSON.parse(localStorage.attendance),
         $allMissed = $('tbody .missed-col'),
         $allCheckboxes = $('tbody input');
